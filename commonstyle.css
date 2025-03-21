@@ -6,23 +6,31 @@ body {
     padding: 0;
 }
 
-header, nav, main, footer {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1d2946;
+    color: #ffffff;
+    width: 100%;
+    padding: 20px 0;
 }
 
-header {
-    text-align: center;
-    margin-top: 20px;
+header .logo {
+    width: 30px; /* Dimensione del logo */
+    margin-right: 10px; /* Spaziatura tra il logo e il titolo */
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     text-align: center;
+    margin: 20px 0; /* Spaziatura tra il menu e il contenuto */
 }
 
 nav ul li {
@@ -42,17 +50,29 @@ nav ul li a:hover {
     background-color: #f0f0f0;
 }
 
+main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 section {
-    margin-top: 20px;
+    margin-top: 40px; /* Maggiore spaziatura tra le sezioni */
     padding: 20px;
     border-radius: 10px;
     background-color: #f9f9f9;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+section h2 {
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
 footer {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px; /* Maggiore spaziatura tra il contenuto e il footer */
     padding: 10px;
     border-radius: 10px;
     background-color: #f0f0f0;
